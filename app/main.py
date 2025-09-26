@@ -6,7 +6,7 @@ import pandas as pd
 from .schemas import VectorPayload, BatchPayload
 
 app = FastAPI(title="Rain Forecast API", version="1.0.0")
-MODELS_ROOT = Path(__file__).resolve().parents[1] / "models"
+MODELS_ROOT = Path(__file__).resolve().parents[2] / "models"
 
 def load_bundle(task_folder: str):
     root = MODELS_ROOT / task_folder
